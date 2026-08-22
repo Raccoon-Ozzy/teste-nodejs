@@ -19,6 +19,7 @@
   "devDependencies": {
     "jasmine": "^7.0.0",
     "jest": "^30.4.2",
+    "jest-junit": "^17.0.0",
     "mocha": "^11.8.0"
   }
 }
