@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx jest",
-    "coverage": "npx jest --coverage",
-    "test:ci": "npx jest --ci --reporters=default --reporters=jest-junit"
+    "coverage": "npx jest --coverage --coverageDirectory=coverage",
+    "test:ci": "npx jest --ci --reporters=default --reporters=jest-junit --outputFile=reports/junit.xml"
   },
   "keywords": [],
   "author": "",
