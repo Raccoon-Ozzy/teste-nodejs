@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "coverage": "jest --coverage",
-    "test:ci": "jest --ci --reporters=default --reporters=jest-junit"
+    "test": "npx jest",
+    "coverage": "npx jest --coverage",
+    "test:ci": "npx jest --ci --reporters=default --reporters=jest-junit"
   },
   "keywords": [],
   "author": "",
