@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "jest",
+  "coverage": "jest --coverage",
+  "test:ci": "jest --ci --reporters=jest-junit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "supertest": "^7.2.2"
+  },
+  "devDependencies": {
+    "jasmine": "^7.0.0",
+    "mocha": "^11.8.0"
   }
 }
