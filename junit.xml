@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" errors="0" time="1.062">
+  <testsuite name="Array" errors="0" failures="0" skipped="0" timestamp="2026-08-22T22:38:11" time="0.361" tests="1">
+    <testcase classname="Array #indexOf() should return -1 when the value is not present" name="Array #indexOf() should return -1 when the value is not present" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Decimal to Binary API" errors="0" failures="0" skipped="0" timestamp="2026-08-22T22:38:11" time="0.703" tests="2">
+    <testcase classname="Decimal to Binary API deve retornar um número binário se o número informado for um decimal válido" name="Decimal to Binary API deve retornar um número binário se o número informado for um decimal válido" time="0.022">
+    </testcase>
+    <testcase classname="Decimal to Binary API deve retornar erro 400 caso for informado um número decimal inválido" name="Decimal to Binary API deve retornar erro 400 caso for informado um número decimal inválido" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>

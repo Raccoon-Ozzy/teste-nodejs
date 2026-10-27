@@ -5,33 +5,30 @@ const port = 3000;
 // Endpoint para converter decimal para binario
 app.get("/to-binary/:decimal", (req, res) => {
   // Converte o parametro para numero inteiro
-const decimal = parseInt(req.params.decimal, 10);
+  const decimal = parseInt(req.params.decimal, 10);
 
   // Se nao for numero decimal retorna um erro com status 400
-if (isNaN(decimal)) {
+  if (isNaN(decimal)) {
     return res.status(400).json({ error: "Invalid decimal number" });
-}
+  }
 
   const binary = decimal.toString(2); // Converte o numero decimal para binario
   res.json({ decimal, binary }); // Retorna a resposta como JSON
 });
 
-app.listen(port, () => {
-console.log(`Servidor rodando na porta ${port}`);
-});
-
-// Novo endpoint para converter decimal para hexadecimal
+// Endpoint para converter decimal para hexadecimal
 app.get("/to-hex/:decimal", (req, res) => {
-    const decimal = parseInt(req.params.decimal, 10);
-      if (isNaN(decimal)) {
-  return res.status(400).json({ error: "Invalid decimal number" });
-}
-//Coverte para hexadecimal e deixa em maiusculas
+  const decimal = parseInt(req.params.decimal, 10);
+  if (isNaN(decimal)) {
+    return res.status(400).json({ error: "Invalid decimal number" });
+  }
 
-  const hex= decimal.toString(16).toUpperCase();
-  res.json([ decimal, hex ]);
+  // Converte para hexadecimal e deixa em maiusculas
+  const hex = decimal.toString(16).toUpperCase();
+  res.json([decimal, hex]);
 });
-  app.listen(port,() => {
-    console.log('Server running on http:localhost:$(port)');
 
+// Inicialização única do servidor
+app.listen(port, () => {
+  console.log(`Servidor rodando em http://localhost:${port}`);
 });
